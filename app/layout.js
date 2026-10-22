@@ -8,6 +8,7 @@ import Providers from "./providers";
 import "./css/card.scss";
 import "./css/globals.scss";
 import { swpConfig } from "@/utils/data/swp-config";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -46,6 +47,7 @@ export default function RootLayout({ children }) {
           </main>
           <Footer />
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
